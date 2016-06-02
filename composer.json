@@ -9,10 +9,10 @@
   "homepage": "http://framework.zend.com/",
   "require": {
     "php": ">=5.5",
-    "phing/phing": "~2.9",
     "zendframework/zendframework": "~2.5",
     "doctrine/doctrine-orm-module": "~0.9.1",
     "doctrine/migrations": "~1.1",
+    "phing/phing": "~2.9",
     "continuousphp/aws-sdk-phing": "~0.1"
   },
   "require-dev": {
@@ -20,7 +20,9 @@
     "squizlabs/php_codesniffer": "^2.3",
     "behat/behat": "^3.0",
     "behat/mink-extension": "~2.0",
-    "behat/mink-goutte-driver": "~1.1"
+    "behat/mink-goutte-driver": "~1.1",
+    "mikey179/vfsStream": "^1.6.2",
+    "phpunit/php-invoker": "1.1.*"
   },
   "autoload-dev": {
     "psr-4": {

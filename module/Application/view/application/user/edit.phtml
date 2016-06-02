@@ -1,0 +1,17 @@
+<?php if ($user) : ?>
+<form method="post">
+    <label>
+        Firstname
+        <input name="Firstname" type="text" value="<?= $user->getFirstname() ?>" />
+    </label>
+    <label>
+        Lastname
+        <input name="Lastname" type="text" value="<?= $user->getLastname() ?>" />
+    </label>
+    <input type="submit" value="Save" class="btn btn-primary">
+</form>
+<?php else: ?>
+<p class="alert alert-danger">
+    The user has not been found
+</p>
+<?php endif; ?>
