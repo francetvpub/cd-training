@@ -2,4 +2,6 @@
 <ruleset name="continuousphp-phing-tasks">
     <description>PSR2 Coding standard</description>
     <rule ref="PSR2"/>
+    <file>module/Application/src</file>
+    <file>module/Application/tests</file>
 </ruleset>
