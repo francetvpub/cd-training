@@ -60,12 +60,6 @@ else
   ./init.php
 fi
 
-cd /var/www/zf
-if [ -f composer.json ] ; 
-then
-  composer install --no-interaction
-fi
-
 echo "Installing the ElastiCache client"
 if [ ! -f /usr/local/zend/lib/php_extensions/amazon-elasticache-cluster-client.so ] ; then
   cd /usr/local/zend/lib/php_extensions
@@ -101,6 +95,12 @@ a2enmod rewrite
 a2dissite 000-default
 a2ensite skeleton-zf
 service apache2 restart
+
+cd /var/www/zf
+if [ -f composer.json ] ; 
+then
+  composer install --no-interaction
+fi
 
 echo "** [FTVP] Visit http://localhost:8085 in your browser for to view the application **"
 echo "** [FTVP] Visit http://localhost:10081 in your browser for Zend Server console **"
