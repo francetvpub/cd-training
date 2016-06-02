@@ -5,4 +5,6 @@ Feature: Homepage default behavior
     When I am on the homepage
     Then I should see "Welcome"
     And I should see "Heng"
+    And I should see "Julien"
+    And I should see "Elvis"
 
