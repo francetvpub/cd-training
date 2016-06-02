@@ -5,4 +5,4 @@ Feature: Homepage default behavior
     When I am on the homepage
     Then I should see "Welcome"
     And I should see "Julien"
-    And I should see "Ho hai! I can has cheezburger"
+    And I should see "Elvis"
