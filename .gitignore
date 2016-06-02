@@ -9,5 +9,5 @@ nbproject
 .settings
 vendor
 composer.phar
-composer.lock
 /build.local.properties
+zend.lic
