@@ -8,5 +8,3 @@ Feature: Homepage default behavior
     And I should see "Elvis"
     And I should see "Xavier"
     And I should see "Heng"
-    
-    
